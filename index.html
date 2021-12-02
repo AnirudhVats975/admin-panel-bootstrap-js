@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+     <link rel="stylesheet" href="css/boottrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <script src="https://kit.fontawesome.com/yourcode.js"></script>
+     <script src="https://kit.fontawesome.com/98385e5ad4.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+
+    </head>
+<body class="bg-right">
+
+    <div class="conatiner-fluid mt-5">
+        <div  class="row">
+            <div class="col-md-10 col-11 mx-auto ">
+        
+                  <nav aria-label="breadcrumb" class="">
+                    <ol class="breadcrumb mb-3">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">User</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Profile setting</li>
+                    </ol>
+                  </nav>
+
+                  <div class="row">
+                    <!--right side nav-->
+                    <div class="col-lg-3 col-md-4 d-md-block">
+                      <div class="card bg-common card-left">
+                       <div class="card-body">
+                        <nav class="nav d-md-block d-none">
+                          <a data-toggle="tab" class="nav-link active" href="#profile"><i class="fa fa-user mr-1"></i> Profile</a>
+                          <a data-toggle="tab" class="nav-link" href="#account"><i class="fas fa-user-cog mr-1"></i> Account Setting</a>
+                          <a data-toggle="tab" class="nav-link" href="#security"><i class="fas fa-user-shield mr-1"></i></i> Security</a>
+                          
+                          <a data-toggle="tab" class="nav-link" href="#notification"> <i class="fa fa-bell mr-1"></i> Notification</a>
+                          <a data-toggle="tab" class="nav-link" href="#billing"><i class="fas fa-money-check-alt mr-1"></i> Billing</a>
+                          
+                          
+                        </nav>
+                       </div>
+
+                      </div>
+                    </div>
+                 
+     <!--right side div start-->
+     <div class="col-lg-9 col-md-8">
+   <div class="card">
+     <div class="card-header border-bottom mb-3 d-md-none">
+      <ul class="nav nav-tabs card-header-tabs nav-fill">
+        <li class="nav-item">
+          <a data-toggle="tab" class="nav-link active" href="#profile"><i class="fa fa-user"></i></a>
+        </li>
+        <li class="nav-item">
+          <a data-toggle="tab" class="nav-link" href="#account"><i class="fas fa-user-cog"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a data-toggle="tab" class="nav-link" href="#security"><i class="fas fa-user-shield mr-1"></i></a>
+        </li>
+
+
+        <li class="nav-item">
+        <a data-toggle="tab" class="nav-link" href="#notification"><i class="fa fa-bell"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <a data-toggle="tab" class="nav-link" href="#billing"><i class="fas fa-money-check-alt"></i></a>
+        </li>
+        
+      </ul>
+     </div>
+   
+     <!--user profie start-->
+      <div class="card-body  tab-content border-0">
+
+       <!--profile actual data-->
+      <div class="tab-pane active" id="profile">
+       <h6>YOUR FILE INFORMATION</h6>
+       <hr>
+
+       <form>
+        <div class="form-group">
+          <label for="FullName">Full Name</label>
+          <input type="name" class="form-control"  placeholder="Your Name">
+          <small class="from-text text-muted">Please Enter Your Full Name</small>
+          </div>
+
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Your Bio</label>
+            <textarea class="form-control"  rows="1" placeholder="I'm full Stack Developer, Freelancer and Youtuber"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">URL</label>
+            <textarea class="form-control"  rows="1" placeholder="Enter your website URL"></textarea>
+          </div>
+
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Location</label>
+            <textarea class="form-control"  rows="1" placeholder="Your adress"></textarea>
+          </div>
+
+          <div class="form-group from-text text-muted small">
+          All of the field on this page are optional annd can be delete at any time, and then filling them out,
+          You are the givinng us conset to share this data wherever your user profile appers.
+          </div>
+
+          <button class="btn btn-outline-info mr-2" type="reset">Update Profile</button>
+          <button class="btn btn-outline-info" type="reset">Reset changes</button>
+
+        </form>
+      </div>
+
+
+      <!--account actual data-->
+      <div class="tab-pane " id="account">
+        <h6>ACCOUNT SETTING</h6>
+        <hr>
+      
+        <form>
+          <div class="form-group">
+            <label for="FullName">UserName</label>
+            <input type="name" class="form-control"  placeholder="Anirudhvats94">
+            <small class="from-text text-muted">After changing your username, your old username  become
+              unaivalble for annyone else to claim.
+            </small>
+            </div>
+
+           </form>
+           
+           <hr>
+           <form>
+            <label for="FullName" class="text-danger">Delete Account</label>
+            <p class="muted">Once you delete your account, there is no going back.
+              Please be certain.
+            </p>
+           <button class="btn btn-danger">Delete Account</button>
+           </form>
+
+       </div>
+
+       <!--security actual data-->
+      <div class="tab-pane " id="security">
+        <h6>SECURITY SETTING</h6>
+        <hr>
+         <form>
+        <div class="form-group">
+          <label for="FullName">Change Password</label>
+          <input type="password" class="form-control"  placeholder="Enter Your Old Password"><br>
+          <input type="password" class="form-control mb-1"  placeholder="New Passowrd">
+          <input type="password" class="form-control"  placeholder="Confrim New Password">
+          </div>
+          </form>
+
+          <hr>
+          <form>
+            <div class="form-group">
+              <label>Two Factor Authentication</label><br>
+              <button class="btn btn-outline-info" type="submit">Enable two factore Authentication</button>
+               <p class="small text-muted">Two factor aithentication adds an  addtional layer of Security
+               to your account by requring more than just a paswword to log In.</p>
+            </div>
+          </form>
+
+        <form>
+          <div class="from-group">
+            <label>Sessions</label>
+            <p class="small text-muted">This is the list of device that have logged into your account.
+              revoke any session that you do not recognise</p>
+          </div>
+
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div>
+                <h6>saharanpur 28.2096 N, 83.9856 E</h6>
+                <small  class="text muted small">India</small>
+                <br>
+                <button class="btn btn-light btn-sm ml-auto">more info</button>
+              </div>
+            </li>
+          </ul>
+        </form>
+
+       </div>
+
+
+       <!--notification actual data-->
+      <div class="tab-pane " id="notification">
+        <h6>NOTIFICATION SETTING</h6>
+        <hr>
+        <from>
+          <div class="from-grop">
+            <label>Security Alert</label>
+            <p class="text-muted small">Recevice secutity alert notification via email.</p>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Email each time a vulnerability is found
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Email a digest  summmary of vulnerability
+            </label>
+          </div>
+    
+          <!--sms notification paert-->
+          <div class="mb-3">
+          <label  class="mt-4">SMS Notification</label>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <label>Commment</label>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1"></label>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              <label>Update from pepole</label>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                <label class="custom-control-label" for="customSwitch2"></label>
+              </div>
+            </li>
+           
+            <li class="list-group-item">
+              <label>Reminder</label>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                <label class="custom-control-label" for="customSwitch3"></label>
+              </div>
+            </li>
+
+
+            <li class="list-group-item">
+              <label>Event</label>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                <label class="custom-control-label" for="customSwitch4">comment</label>
+              </div>
+            </li>
+
+            
+            <li class="list-group-item">
+              <label>Page you follow</label>
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                <label class="custom-control-label" for="customSwitch5"></label>
+              </div>
+            </li>
+            
+          </ul>
+          </div>
+
+        </from>
+       </div>
+
+
+       <!--billing actual data-->
+      <div class="tab-pane " id="billing">
+        <h6>BILLING</h6>
+        <hr>
+        <form>
+        <h3>Payment Method</h3>
+        <p class="small text-muted">You have not adding the payment method</p>
+       </div>
+      </form>
+
+      
+
+      </div>
+
+
+
+
+   </div>
+     </div> 
+     
+     
+
+
+
+            
+    </div>
+    </div>
+    </div>   
+    </div>
+     
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/propper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

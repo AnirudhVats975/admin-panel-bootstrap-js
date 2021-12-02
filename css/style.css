@@ -1,0 +1,18 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Baloo Da 2';
+}
+
+.bg-common{
+    background: rgba(34, 44, 51, 0.6);
+}
+
+.bg-right{
+    background: #383f48;
+}
+
+.nav-link, .breadcrum-item{
+    transition: all 0.3s;
+    color: #bfc0cd;
+}
